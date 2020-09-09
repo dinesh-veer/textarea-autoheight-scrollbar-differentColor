@@ -1,0 +1,49 @@
+
+.textarea {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    resize: both;
+    min-height: 40px;
+    line-height: 20px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 1px 6px;
+}
+  
+  .textarea[contenteditable]:empty::before {
+    content: "Placeholder still possible";
+    color: gray;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body   {
+    position: absolute;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    }
+    html {
+    overflow-y: auto;
+    background-color: transparent;
+    }
+    ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    }
+    ::-webkit-scrollbar-button:start:decrement,
+    ::-webkit-scrollbar-button:end:increment  {
+    height: 10px;
+    background-color: transparent;
+    }
+    ::-webkit-scrollbar-track-piece  {
+    background-color: #eeeeee;
+    -webkit-border-radius: 16px;
+    }
+    ::-webkit-scrollbar-thumb:vertical {
+    height: 10px;
+    background-color: rgb(187, 23, 23);
+    border: 1px solid #eee;
+    -webkit-border-radius: 16px;
+    }
